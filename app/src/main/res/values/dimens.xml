@@ -1,0 +1,47 @@
+<!-- Copyright © 2016 M800 Limited. All rights reserved. -->
+<resources>
+    <!--font size-->
+    <dimen name="lc_font_size_XS">10sp</dimen>
+    <dimen name="lc_font_size_XS2">11sp</dimen>
+    <dimen name="lc_font_size_S">12sp</dimen>
+    <dimen name="lc_font_size_S2">13sp</dimen>
+    <dimen name="lc_font_size_M">14sp</dimen>
+    <dimen name="lc_font_size_M2">16sp</dimen>
+    <dimen name="lc_font_size_M3">17sp</dimen>
+    <dimen name="lc_font_size_L">18sp</dimen>
+    <dimen name="lc_font_size_L1">19sp</dimen>
+    <dimen name="lc_font_size_L2">20sp</dimen>
+    <dimen name="lc_font_size_L3">24sp</dimen>
+    <dimen name="lc_font_size_XL">26sp</dimen>
+    <dimen name="lc_font_size_XL2">28sp</dimen>
+    <dimen name="lc_font_size_XXL">34sp</dimen>
+
+    <!--spacing-->
+    <dimen name="spacing_empty">0dp</dimen>
+    <dimen name="spacing_XS">2dp</dimen>
+    <dimen name="spacing_S">4dp</dimen>
+    <dimen name="spacing_S2">6dp</dimen>
+    <dimen name="spacing_M">8dp</dimen>
+    <dimen name="spacing_M2">10dp</dimen>
+    <dimen name="spacing_M3">12dp</dimen>
+    <dimen name="spacing_M4">14dp</dimen>
+    <dimen name="spacing_L">16dp</dimen>
+    <dimen name="spacing_L2">18dp</dimen>
+    <dimen name="spacing_L3">22dp</dimen>
+    <dimen name="spacing_XL">24dp</dimen>
+    <dimen name="spacing_XL2">28dp</dimen>
+    <dimen name="spacing_XL3">32dp</dimen>
+    <dimen name="spacing_XXL">36dp</dimen>
+    <dimen name="spacing_XXL2">38dp</dimen>
+    <dimen name="spacing_XXL3">40dp</dimen>
+    <dimen name="spacing_XXL4">42dp</dimen>
+    <dimen name="spacing_XXL5">44dp</dimen>
+    <dimen name="spacing_XXXL">56dp</dimen>
+    <dimen name="spacing_line">1px</dimen>
+
+    <!--icon size-->
+    <dimen name="ic_size_M">20dp</dimen>
+    <dimen name="ic_size_M2">23dp</dimen>
+    <dimen name="ic_size_XL2">28dp</dimen>
+    <dimen name="ic_size_XXL">36dp</dimen>
+</resources>

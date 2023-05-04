@@ -1,0 +1,53 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.m800.sdk.core.demo">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".MainApplication"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.m800.provision.edge_server_hpkp"
+            android:value="sha256/cQAIlfXa2KiFnW/q4fPdJPeJSBNnhuTY0xRHXdsY7G4=" />
+        <meta-data
+            android:name="com.m800.provision.edge_server"
+            android:value="@string/edge_server" />
+        <meta-data
+            android:name="com.m800.provision.mqtt_server"
+            android:value="@string/mqtt_server" />
+        <meta-data
+            android:name="com.m800.provision.cdn_list"
+            android:resource="@array/csd_list" />
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".FCMService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.m800.sdk.core.mqtt.MqttService" />
+        <service android:name=".TestService" />
+    </application>
+</manifest>

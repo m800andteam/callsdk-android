@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.m800.sdk.core.demo.call.CallViewModel"/>
+        <import type="com.m800.sdk.core.demo.utils.CustomManager" />
+        <variable name="viewModel" type="CallViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@color/title_black">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/lc_btn_hangup"
+                style="@style/lc_call_button"
+                android:onClick="@{() -> viewModel.hangup()}"
+                android:src="@{CustomManager.getColorSelectorDeclineButton(), default=@drawable/call_panel_end_icon}" />
+
+            <TextView
+                android:id="@+id/lc_btn_hangup_text"
+                android:text="@string/lc_call_button_decline"
+                style="@style/call_info.button_text2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lc_btn_answer_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/lc_btn_answer"
+                style="@style/lc_call_button"
+                android:onClick="@{() -> viewModel.answer(false)}"
+                android:src="@{CustomManager.getColorSelectorAcceptButton(), default=@drawable/call_button_accept_icon}" />
+
+            <TextView
+                android:id="@+id/lc_btn_answer_text"
+                android:text="@string/lc_call_button_accept"
+                style="@style/call_info.button_text2" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

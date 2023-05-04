@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary -->
+    <color name="branding">#003282</color>
+    <color name="secondary">#008EFF</color>
+    <color name="background_light">#F9FBFF</color>
+    <color name="title_black">#212121</color>
+    <color name="black">#000000</color>
+    <color name="black_opacity_50">#80000000</color>
+    <color name="white">#FFFFFF</color>
+    <!-- Secondary -->
+    <color name="external">#19BF99</color>
+    <color name="alert">#DC3545</color>
+    <color name="divider">#E9E9E9</color>
+    <color name="call">#3BD480</color>
+    <color name="icon">#526C8C</color>
+    <color name="accentuate_dark">#2C3638</color>
+    <color name="body_black">#999999</color>
+    <color name="body">#666666</color>
+</resources>

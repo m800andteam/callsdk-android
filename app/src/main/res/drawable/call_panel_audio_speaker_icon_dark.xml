@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/white">
+    <shape android:shape="oval">
+      <solid android:color="@color/white" />
+      <size
+          android:width="50dp"
+          android:height="50dp" />
+    </shape>
+  </item>
+
+  <item
+      android:id="@+id/call_panel_audio_speaker_dark"
+      android:drawable="@drawable/call_panel_audio_speaker_dark" />
+</layer-list>

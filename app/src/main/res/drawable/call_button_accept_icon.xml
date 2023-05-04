@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/call">
+    <shape android:shape="oval">
+      <solid android:color="@color/call" />
+      <size
+          android:width="60dp"
+          android:height="60dp" />
+    </shape>
+  </item>
+
+  <item
+      android:id="@+id/call_button_accept"
+      android:drawable="@drawable/call_button_accept" />
+</layer-list>

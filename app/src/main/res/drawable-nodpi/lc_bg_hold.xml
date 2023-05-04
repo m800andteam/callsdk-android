@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright © 2016 M800 Limited. All rights reserved. -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/call_panel_hold_light_icon" android:state_enabled="false"/>
+    <item android:drawable="@drawable/call_panel_hold_dark_icon" android:state_pressed="true"/>
+    <item android:drawable="@drawable/call_panel_hold_dark_icon" android:state_checked="true"/>
+    <item android:drawable="@drawable/call_panel_hold_light_icon"/>
+</selector>

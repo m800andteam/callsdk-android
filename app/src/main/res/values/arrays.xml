@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Testing accounts -->
+    <string-array name="testing_accounts">
+        <item>liuming@m800.com</item>
+        <item>liuming@maaii.com</item>
+        <item>wisenight2222@gmail.com</item>
+    </string-array>
+    <string-array name="testing_password">
+        <item>Maaii2016</item>
+        <item>Maaii2016</item>
+        <item>Maaii2016</item>
+    </string-array>
+
+    <string-array name="testing_callee_list">
+        <item>@string/testing_eid_1</item> <!-- lc-dev-3@m800.com -->
+        <item>@string/testing_eid_2</item> <!-- lc-dev-3@m800.com -->
+        <item>@string/testing_eid_3</item>
+    </string-array>
+
+    <string-array name="csd_list">
+        <item>@string/csd1</item>
+    </string-array>
+
+</resources>

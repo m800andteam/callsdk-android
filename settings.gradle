@@ -1,0 +1,5 @@
+include ':m800callsdk', ':libwebrtc'//':msme', ':MSME-WebRTC',
+include ':app'
+
+include 'm800coresdk'
+project(':m800coresdk').projectDir = new File('../M800CoreSDK-Android/m800coresdk')

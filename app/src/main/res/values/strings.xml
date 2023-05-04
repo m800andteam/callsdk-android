@@ -1,0 +1,88 @@
+<resources>
+    <string name="service_id">@string/tb_service_id</string>
+    <string name="edge_server">@string/tb_edge_server</string>
+    <string name="mqtt_server">@string/tb_mqtt_server</string>
+    <string name="csd1">@string/tb_testing_csd1</string>
+
+    <string name="testing_eid_1">@string/tb_testing_eid_1</string>
+    <string name="testing_eid_2">@string/tb_testing_eid_2</string>
+    <string name="testing_eid_3">@string/tb_testing_eid_3</string>
+
+    <!-- Dev env -->
+    <string name="dev_service_id">cake-tw.m800.com</string>
+    <string name="dev_edge_server">https://edge-dev.m800.com</string>
+    <string name="dev_mqtt_server">ssl://mqtt-dev.m800.com:1883</string>
+
+    <string name="dev_testing_eid_1">obILUJ8l.4ZCDEqHQwnba.a57d.01000000.pl4jbOkYRbORDBlo</string>
+    <string name="dev_testing_eid_2">obILUJ8l.PCce4cTyd7UE.9d94.01000000.roYWYM5PYCcNch31</string>
+    <string name="dev_testing_eid_3">obILUJ8l.buBgZG5WOM-t.ca83.01000000.cMAIAfOR9v559kXX</string>
+    <string name="dev_testing_csd1">https://m800-csd-dev.m800.com/v1/m800-global-csd-list</string>
+
+    <string name="dev_testing_rn_1">0010</string>
+    <string name="dev_testing_rn_2">0011</string>
+    <string name="dev_testing_rn_3">0012</string>
+
+    <!-- Int env -->
+    <string name="int_service_id">mc-int-1.cx-int.cinnox.com</string>
+    <string name="int_edge_server">https://hkin-ed.cx-int.cinnox.com</string>
+    <string name="int_mqtt_server">ssl://hkin-mqsl01.cx-int.cinnox.com:1883</string>
+
+    <string name="int_testing_eid_1">5rftlwVg.5vW4mEX6vOlh.83ba.02000000.BO7x28WnOOW-Y_p-</string>
+    <string name="int_testing_eid_2">5rftlwVg.ggeYPlCuBQsS.1e31.02000000.qHRSZZ9NxoQxvAWf</string>
+    <string name="int_testing_eid_3">5rftlwVg.-j2ohGp-2KAb.3635.02000000.8toKsNaO1_WVhqtp</string>
+    <string name="int_testing_csd1">https://in-csd.cx-int.cinnox.com/v1/m800-global-csd-list</string>
+
+    <string name="int_testing_rn_1">0010</string>
+    <string name="int_testing_rn_2">0011</string>
+    <string name="int_testing_rn_3">0012</string>
+
+    <!-- Tb env -->
+    <string name="tb_service_id">210b.cx-tb.cinnox.com</string>
+    <string name="tb_edge_server">https://hktb-ed.cx-tb.cinnox.com</string>
+    <string name="tb_mqtt_server">ssl://hktb-mqsl01.cx-tb.cinnox.com:1883</string>
+
+    <string name="tb_testing_eid_1">lJJ12wUj.ggeYPlCuBQsS.f511.03000000.MkAKJ1sFo8dkH3WK</string>
+    <string name="tb_testing_eid_2">lJJ12wUj.5vW4mEX6vOlh.b1b2.03000000.s9R0bkTGc4WIb1ZK</string>
+    <string name="tb_testing_eid_3">5rftlwVg.-j2ohGp-2KAb.3635.02000000.8toKsNaO1_WVhqtp</string>
+    <string name="tb_testing_csd1">https://tb-csd.cx-tb.cinnox.com/v1/m800-global-csd-list</string>
+
+    <string name="tb_testing_rn_1">0010</string>
+    <string name="tb_testing_rn_2">0011</string>
+    <string name="tb_testing_rn_3">0012</string>
+
+    <string name="app_name">M800CallSDK Test</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="lc_keypad_text_title">Keypad</string>
+    <string name="lc_room_text_hide">Hide</string>
+    <string name="lc_room_text_mute">Mute</string>
+    <string name="lc_room_text_unmute">Unmute</string>
+    <string name="lc_call_route_audio">Audio</string>
+    <string name="lc_call_route_bluetooth">Bluetooth</string>
+    <string name="lc_call_route_headphone">Headphones</string>
+    <string name="lc_call_route_speaker">Speaker</string>
+    <string name="lc_call_button_speaker">Speaker</string>
+    <string name="lc_call_button_audio">Audio</string>
+    <string name="lc_call_button_hold">Hold</string>
+    <string name="lc_call_button_endcall">End Call</string>
+    <string name="lc_call_button_decline">Decline</string>
+    <string name="lc_call_button_accept">Accept</string>
+    <string name="lc_call_button_unhold">Unhold</string>
+    <string name="lc_call_signal_no_network">No Network</string>
+    <string name="lc_common_text_connected">Connected</string>
+    <string name="lc_common_text_connecting">Connecting</string>
+    <string name="lc_call_text_statusAbandoned">Abandoned</string>
+    <string name="lc_call_text_statusCallCanceled">Call Canceled</string>
+    <string name="lc_call_text_statusCallDeclined">Call Declined</string>
+    <string name="lc_call_text_statusCallEndedByUser">Call Ended, %s</string>
+    <string name="lc_call_text_statusCallMissed">Missed Call</string>
+    <string name="lc_call_text_statusCalling">Calling</string>
+    <string name="lc_call_text_statusFailedToConnect">Failed</string>
+    <string name="lc_call_text_statusIncomingAudioCall">Incoming voice call</string>
+    <string name="lc_call_text_statusIncomingConfCall">Incoming conference call</string>
+    <string name="lc_call_text_statusIncomingVideoCall">Incoming Video Call</string>
+    <string name="lc_call_text_statusNoAnswer">No Answer</string>
+    <string name="lc_call_text_status_cancel_by_other_device">Answered on another device</string>
+    <string name="lc_call_text_status_cancel_by_other_staff">Handled by another staff</string>
+    <string name="lc_call_text_status_the_call_is_picked_up">Call connected</string>
+</resources>

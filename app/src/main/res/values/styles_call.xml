@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright © 2016 M800 Limited. All rights reserved. -->
+
+<resources>
+
+    <style name="call_info">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/lc_font_size_M3</item>
+    </style>
+
+    <style name="call_info.title" parent="call_info">
+        <item name="android:textSize">@dimen/lc_font_size_XL</item>
+    </style>
+
+    <style name="call_info.button_text" parent="call_info">
+        <item name="android:textSize">@dimen/lc_font_size_M</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="call_info.button_text2" parent="call_info">
+        <item name="android:layout_width">@dimen/lc_call_answer_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_M3</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/lc_font_size_XS2</item>
+    </style>
+
+    <style name="call_info.status" parent="call_info">
+        <item name="android:textSize">@dimen/lc_font_size_M2</item>
+    </style>
+
+    <style name="video_call_info.status" parent="call_info">
+        <item name="android:textSize">@dimen/lc_font_size_XS2</item>
+    </style>
+
+    <style name="lc_call_button">
+        <item name="android:layout_width">@dimen/lc_call_circle_button_width_big</item>
+        <item name="android:layout_height">@dimen/lc_call_circle_button_width_big</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="lc_call_button2" parent="lc_call_button">
+        <item name="android:button">@null</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="lc_call_button_pane">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/lc_call_button_width</item>
+        <item name="android:minHeight">@dimen/lc_call_button_height</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="call_keypad_item_layout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="call_keypad_text_primary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/lc_font_size_XXL</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="call_keypad_text_secondary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/lc_font_size_S</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+</resources>

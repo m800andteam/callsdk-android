@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/accentuate_dark">
+    <shape android:shape="oval">
+      <solid android:color="@color/accentuate_dark" />
+      <size
+          android:width="50dp"
+          android:height="50dp" />
+    </shape>
+  </item>
+
+  <item
+      android:id="@+id/call_panel_mute_main"
+      android:drawable="@drawable/call_panel_mute_main" />
+
+  <item
+      android:id="@+id/call_panel_mute_line"
+      android:drawable="@drawable/call_panel_mute_line" />
+</layer-list>

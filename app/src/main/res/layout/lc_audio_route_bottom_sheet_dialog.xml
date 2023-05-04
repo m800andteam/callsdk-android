@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="com.m800.sdk.core.demo.R" />
+        <import type="com.m800.sdk.core.demo.utils.CustomManager" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_XXXL"
+            android:background="@{CustomManager.getColorRippleWithMask(CustomManager.getColorIcon(0.4), R.drawable.selectable_item_bg)}"
+            android:drawableLeft="@drawable/call"
+            android:drawablePadding="36dp"
+            android:gravity="start|center_vertical"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="8sp"
+            android:paddingStart="@dimen/spacing_L"
+            android:text="@string/lc_call_route_audio"
+            android:textColor="@color/black"
+            style="@style/subtitle1" />
+
+        <TextView
+            android:id="@+id/tv_speaker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_XXXL"
+            android:background="@{CustomManager.getColorRippleWithMask(CustomManager.getColorIcon(0.4), R.drawable.selectable_item_bg)}"
+            android:drawableLeft="@drawable/unmute"
+            android:drawablePadding="36dp"
+            android:gravity="start|center_vertical"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="8sp"
+            android:paddingStart="@dimen/spacing_L"
+            android:text="@string/lc_call_route_speaker"
+            android:textColor="@color/black"
+            style="@style/subtitle1" />
+
+        <TextView
+            android:id="@+id/tv_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_XXXL"
+            android:background="@{CustomManager.getColorRippleWithMask(CustomManager.getColorIcon(0.4), R.drawable.selectable_item_bg)}"
+            android:drawableLeft="@drawable/ic_bluetooth"
+            android:drawablePadding="36dp"
+            android:gravity="start|center_vertical"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="8sp"
+            android:paddingStart="@dimen/spacing_L"
+            android:textColor="@color/black"
+            style="@style/subtitle1" />
+
+        <TextView
+            android:id="@+id/tv_wired_headset"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_XXXL"
+            android:background="@{CustomManager.getColorRippleWithMask(CustomManager.getColorIcon(0.4), R.drawable.selectable_item_bg)}"
+            android:drawableLeft="@drawable/ic_headset"
+            android:drawablePadding="36dp"
+            android:gravity="start|center_vertical"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="8sp"
+            android:paddingStart="@dimen/spacing_L"
+            android:text="@string/lc_call_route_headphone"
+            android:textColor="@color/black"
+            style="@style/subtitle1" />
+    </LinearLayout>
+</layout>

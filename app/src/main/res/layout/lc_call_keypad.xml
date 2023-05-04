@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.m800.sdk.core.demo.utils.CustomManager" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:background="@color/title_black">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/keypad_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginEnd="28dp"
+                android:textColor="@color/white"
+                style="@style/h1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="@dimen/lc_font_size_XXL"
+                android:autoSizeMinTextSize="@dimen/lc_font_size_XS"
+                tools:text="123456789"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:background="@{CustomManager.getColorDivider(), default=@color/divider}" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/keypad1"
+                style="@style/call_keypad_item_layout"
+                android:background="@drawable/selector_kp_background"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/keypad4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/keypad2">
+
+                <TextView
+                    style="@style/call_keypad_text_primary"
+                    android:textColor="@color/white"
+                    android:text="1"/>
+                <TextView
+                    style="@style/call_keypad_text_secondary"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keypad2"
+                style="@style/call_keypad_item_layout"
+                android:background="@drawable/selector_kp_background"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/keypad5"
+                app:layout_constraintStart_toEndOf="@+id/keypad1"
+                app:layout_constraintEnd_toStartOf="@+id/keypad3">
+
+                <TextView
+                    style="@style/call_keypad_text_primary"
+                    android:textColor="@color/white"
+                    android:text="2" />
+                <TextView
+                    style="@style/call_keypad_text_secondary"
+                    android:textColor="@color/white"
+                    android:text="ABC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keypad3"
+                style="@style/call_keypad_item_layout"
+                android:background="@drawable/selector_kp_background"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/keypad6"
+                app:layout_constraintStart_toEndOf="@+id/keypad2"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    style="@style/call_keypad_text_primary"
+                    android:textColor="@color/white"
+                    android:text="3" />
+                <TextView
+                    style="@style/call_keypad_text_secondary"
+                    android:textColor="@color/white"
+                    android:text="DEF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keypad4"
+                style="@style/call_keypad_item_layout"
+                android:background="@drawable/selector_kp_background"
+                app:layout_constraintTop_toBottomOf="@id/keypad1"
+                app:layout_constraintBottom_toTopOf="@id/keypad7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/keypad5">
+
+                <TextView
+                    style="@style/call_keypad_text_primary"
+                    android:textColor="@color/white"
+                    android:text="4" />
+                <TextView
+                    style="@style/call_keypad_text_secondary"
+                    android:textColor="@color/white"
+                    android:text="GHI" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keypad5"
+                style="@style/call_keypad_item_layout"
+                android:background="@drawable/selector_kp_background"
+                app:layout_constraintTop_toBottomOf="@id/keypad2"
+                app:layout_constraintBottom_toTopOf="@id/keypad8"
+                app:layout_constraintStart_toEndOf="@+id/keypad4"
+                app:layout_constraintEnd_toStartOf="@+id/keypad6">
+
+                <TextView
+                    style="@style/call_keypad_text_primary"
+                    android:textColor="@color/white"
+                    android:text="5" />
+                <TextView
+                    style="@style/call_keypad_text_secondary"
+                    android:textColor="@color/white"
+                    android:text="JKL" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keypad6"
+                style="@style/call_keypad_item_layout"
+                android:background="@drawable/selector_kp_background"
+                app:layout_constraintTop_toBottomOf="@id/keypad3"
+                app:layout_constraintBottom_toTopOf="@id/keypad9"
+                app:layout_constraintStart_toEndOf="@+id/keypad5"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    style="@style/call_keypad_text_primary"
+                    android:textColor="@color/white"
+                    android:text="6" />
+                <TextView
+                    style="@style/call_keypad_text_secondary"
+                    android:textColor="@color/white"
+                    android:text="MNO" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keypad7"
+                style="@style/call_keypad_item_layout"
+                android:background="@drawable/selector_kp_background"
+                app:layout_constraintTop_toBottomOf="@id/keypad4"
+                app:layout_constraintBottom_toTopOf="@id/keypad10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/keypad8">
+
+                <TextView
+                    style="@style/call_keypad_text_primary"
+                    android:textColor="@color/white"
+                    android:text="7" />
+                <TextView
+                    style="@style/call_keypad_text_secondary"
+                    android:textColor="@color/white"
+                    android:text="PQRS" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keypad8"
+                style="@style/call_keypad_item_layout"
+                android:background="@drawable/selector_kp_background"
+                app:layout_constraintTop_toBottomOf="@id/keypad5"
+                app:layout_constraintBottom_toTopOf="@id/keypad11"
+                app:layout_constraintStart_toEndOf="@+id/keypad7"
+                app:layout_constraintEnd_toStartOf="@id/keypad9">
+
+                <TextView
+                    style="@style/call_keypad_text_primary"
+                    android:textColor="@color/white"
+                    android:text="8" />
+                <TextView
+                    style="@style/call_keypad_text_secondary"
+                    android:textColor="@color/white"
+                    android:text="TUV" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keypad9"
+                style="@style/call_keypad_item_layout"
+                android:background="@drawable/selector_kp_background"
+                app:layout_constraintTop_toBottomOf="@id/keypad6"
+                app:layout_constraintBottom_toTopOf="@id/keypad12"
+                app:layout_constraintStart_toEndOf="@+id/keypad8"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    style="@style/call_keypad_text_primary"
+                    android:textColor="@color/white"
+                    android:text="9" />
+                <TextView
+                    style="@style/call_keypad_text_secondary"
+                    android:textColor="@color/white"
+                    android:text="WXYZ" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keypad10"
+                style="@style/call_keypad_item_layout"
+                android:background="@drawable/selector_kp_background"
+                app:layout_constraintTop_toBottomOf="@id/keypad7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/keypad11">
+
+                <TextView
+                    style="@style/call_keypad_text_primary"
+                    android:text="*"
+                    android:textColor="@color/white" />
+                <TextView
+                    style="@style/call_keypad_text_secondary"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keypad11"
+                style="@style/call_keypad_item_layout"
+                android:background="@drawable/selector_kp_background"
+                app:layout_constraintTop_toBottomOf="@id/keypad8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/keypad10"
+                app:layout_constraintEnd_toStartOf="@+id/keypad12">
+
+                <TextView
+                    style="@style/call_keypad_text_primary"
+                    android:textColor="@color/white"
+                    android:text="0" />
+                <TextView
+                    style="@style/call_keypad_text_secondary"
+                    android:textColor="@color/white"
+                    android:text="+" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keypad12"
+                style="@style/call_keypad_item_layout"
+                android:background="@drawable/selector_kp_background"
+                app:layout_constraintTop_toBottomOf="@id/keypad9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/keypad11"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    style="@style/call_keypad_text_primary"
+                    android:text="#"
+                    android:textColor="@color/white" />
+                <TextView
+                    style="@style/call_keypad_text_secondary"
+                    android:text=" "/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</layout>

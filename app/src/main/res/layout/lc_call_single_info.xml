@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="com.m800.sdk.core.demo.R" />
+        <import type="android.view.View"/>
+        <import type="androidx.lifecycle.MutableLiveData"/>
+        <import type="com.m800.sdk.core.demo.call.CallViewModel"/>
+        <import type="com.m800.sdk.core.demo.utils.CustomManager" />
+
+        <variable name="viewModel" type="CallViewModel"/>
+        <variable name="status" type="MutableLiveData&lt;String&gt;"/>
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/lc_call_single_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="@{viewModel.keypadDisplayed ? View.INVISIBLE : View.VISIBLE}"
+        tools:background="@color/title_black"
+        tools:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lc_panel_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_XL"
+            android:layout_marginEnd="@dimen/spacing_XL"
+            android:layout_marginTop="@dimen/spacing_L2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@{viewModel.isOffnet ? (viewModel.isIncoming ? @drawable/call_log_incoming_toll_free : @drawable/call_log_outgoing_toll_free) : (viewModel.isIncoming ? @drawable/call_log_incoming_call : @drawable/call_log_outgoing_call)}"
+                android:tint="@{CustomManager.getColorWhite()}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:src="@drawable/call_log_incoming_call" />
+
+            <TextView
+                android:id="@+id/lc_tv_status"
+                style="@style/call_info.status"
+                android:layout_marginLeft="@dimen/spacing_XS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{status}"
+                android:textColor="@{CustomManager.getColorWhite()}"
+                android:singleLine="true"
+                app:layout_constraintStart_toEndOf="@id/iv_call"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="Incoming Call" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/lc_call_end_dim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_opacity_50"
+            android:visibility="gone"
+            tools:visibility="gone" />
+    </RelativeLayout>
+</layout>

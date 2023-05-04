@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright © 2017 M800 Limited. All rights reserved. -->
+
+<resources>
+    <dimen name="lc_call_min_landscape_height">640dp</dimen>
+    <dimen name="lc_call_circle_button_width_big">60dp</dimen>
+    <dimen name="lc_padding_top_call_screen">24dp</dimen>
+    <dimen name="lc_padding_call_button_panel">24dp</dimen>
+    <dimen name="lc_margin_top_control_call_buttons">28dp</dimen>
+    <dimen name="lc_margin_bottom_control_call_buttons">35dp</dimen>
+    <dimen name="lc_call_answer_width">57dp</dimen>
+    <dimen name="lc_call_video_margin_top">136dp</dimen>
+    <dimen name="lc_call_status_height">70dp</dimen>
+    <dimen name="lc_call_avatar_width">60dp</dimen>
+    <dimen name="lc_call_avatar_height">60dp</dimen>
+    <dimen name="lc_call_avatar_margin">16dp</dimen>
+    <dimen name="lc_call_avatar_small_width">50dp</dimen>
+    <dimen name="lc_call_avatar_small_height">50dp</dimen>
+    <dimen name="lc_call_info_top_margin">36dp</dimen>
+    <dimen name="lc_call_button_width">60dp</dimen>
+    <dimen name="lc_call_button_height">120dp</dimen>
+    <dimen name="lc_video_call_center_avatar_width">96dp</dimen>
+    <dimen name="lc_video_call_center_avatar_height">96dp</dimen>
+</resources>
