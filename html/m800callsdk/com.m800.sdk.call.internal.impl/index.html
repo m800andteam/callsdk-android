@@ -1,0 +1,546 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>com.m800.sdk.call.internal.impl</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script><script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../styles/style.css" rel="Stylesheet"><link href="../../styles/logo-styles.css" rel="Stylesheet"><link href="../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../scripts/main.js" async="async"></script>  </head>
+  <body>
+    <div id="container">
+      <div id="leftColumn"><a href="../../index.html">
+          <div id="logo"></div>
+        </a>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div id="leftToggler"><span class="icon-toggler"></span></div>
+<script type="text/javascript" src="../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="m800callsdk::com.m800.sdk.call.internal.impl////PointingToDeclaration//940151793">
+          <div class="navigation-wrapper" id="navigation-wrapper">
+            <div class="breadcrumbs"><a href="../../index.html">m800callsdk</a>/<a href="index.html">com.m800.sdk.call.internal.impl</a></div>
+            <div class="pull-right d-flex">
+              <div id="searchBar"></div>
+            </div>
+          </div>
+          <div class="cover ">
+            <h1 class="cover"><span>Package com.</span><wbr></wbr><span>m800.</span><wbr></wbr><span>sdk.</span><wbr></wbr><span>call.</span><wbr></wbr><span>internal.</span><wbr></wbr><span>impl</span></h1>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+            <div class="tabs-section-body">
+              <h2 class="">Types</h2>
+              <div class="table" data-togglable="Types"><a data-name="602877757%2FClasslikes%2F940151793" anchor-label="CallSessionImpl" id="602877757%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-call-session-impl/index.html">CallSessionImpl</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="602877757%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">class <a href="-call-session-impl/index.html">CallSessionImpl</a>(m800Context: <span data-unresolved-link="com.m800.sdk.core/M800Context///PointingToDeclaration/">M800Context</span>, call: <a href="../com.m800.sdk.call.internal/-call-wrapper/index.html">CallWrapper</a>, serviceId: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, logger: <span data-unresolved-link="com.m800.sdk.core.logger/M800Logger///PointingToDeclaration/">M800Logger</span>, includeLocalVideo: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, includeRemoteVideo: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, audioController: <a href="../com.m800.sdk.call/-audio-controller/index.html">AudioController</a>, tc: <a href="../com.m800.sdk.call.internal/-track-controller/index.html">TrackController</a>?, service: <span data-unresolved-link="com.m800.sdk.core.call.service/CallEntryService///PointingToDeclaration/">CallEntryService</span>?, iceServer: <span data-unresolved-link="org.webrtc/PeerConnection.IceServer///PointingToDeclaration/">PeerConnection.IceServer</span>?, callFromType: <a href="../com.m800.sdk.call/-cinnox-call-session/-call-from-type/index.html">CinnoxCallSession.CallFromType</a>?, transmissionMode: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, isWarmTransferCall: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, isTransferredCall: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>) : <a href="../com.m800.sdk.call/-m800-call-session/index.html">M800CallSession</a>, <a href="../com.m800.sdk.call.internal/-internal-call-session/index.html">InternalCallSession</a>, <a href="../com.m800.sdk.call.internal/-call-wrapper-listener/index.html">CallWrapperListener</a>, <a href="-track-monitor-notify/index.html">TrackMonitorNotify</a>, <a href="../com.m800.sdk.call/-cinnox-audio-controller/-cinnox-audio-controller-listener/index.html">CinnoxAudioController.CinnoxAudioControllerListener</a>, <a href="../com.m800.sdk.call.internal/-peer-connection-listener/index.html">PeerConnectionListener</a>, <a href="../com.m800.sdk.call.lccall/-call-signal-handler/index.html">CallSignalHandler</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1221630382%2FClasslikes%2F940151793" anchor-label="CinnoxCallInfoImpl" id="-1221630382%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-cinnox-call-info-impl/index.html">CinnoxCallInfoImpl</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1221630382%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">class <a href="-cinnox-call-info-impl/index.html">CinnoxCallInfoImpl</a>(logger: <span data-unresolved-link="com.m800.sdk.core.logger/M800Logger///PointingToDeclaration/">M800Logger</span>, call: <a href="../com.m800.sdk.call.internal/-call-wrapper/index.html">CallWrapper</a>, callFromType: <a href="../com.m800.sdk.call/-cinnox-call-session/-call-from-type/index.html">CinnoxCallSession.CallFromType</a>?) : <a href="../com.m800.sdk.call/-cinnox-call-info/index.html">CinnoxCallInfo</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1596090454%2FClasslikes%2F940151793" anchor-label="ConferenceTrackController" id="-1596090454%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-conference-track-controller/index.html">ConferenceTrackController</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1596090454%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">interface <a href="-conference-track-controller/index.html">ConferenceTrackController</a> : <a href="../com.m800.sdk.call.internal/-track-controller/index.html">TrackController</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1242766102%2FClasslikes%2F940151793" anchor-label="ConferenceTrackControllerImpl" id="-1242766102%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-conference-track-controller-impl/index.html">ConferenceTrackControllerImpl</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1242766102%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">class <a href="-conference-track-controller-impl/index.html">ConferenceTrackControllerImpl</a>(m800Context: <span data-unresolved-link="com.m800.sdk.core/M800Context///PointingToDeclaration/">M800Context</span>, logger: <span data-unresolved-link="com.m800.sdk.core.logger/M800Logger///PointingToDeclaration/">M800Logger</span>, serviceId: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, includeLocalVideo: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, service: <span data-unresolved-link="com.m800.sdk.core.call.service/CallEntryService///PointingToDeclaration/">CallEntryService</span>?, trackMonitorNotify: <a href="-track-monitor-notify/index.html">TrackMonitorNotify</a>?) : <a href="-track-controller-impl/index.html">TrackControllerImpl</a>, <a href="-conference-track-controller/index.html">ConferenceTrackController</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="137022809%2FClasslikes%2F940151793" anchor-label="IceServerHelper" id="137022809%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-ice-server-helper/index.html">IceServerHelper</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="137022809%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">class <a href="-ice-server-helper/index.html">IceServerHelper</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1731671245%2FClasslikes%2F940151793" anchor-label="M800CallSessionManager" id="1731671245%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-m800-call-session-manager/index.html">M800CallSessionManager</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1731671245%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">class <a href="-m800-call-session-manager/index.html">M800CallSessionManager</a>(m800Core: <span data-unresolved-link="com.m800.sdk.core/M800Base///PointingToDeclaration/">M800Base</span>, ringtoneController: <a href="../com.m800.sdk.call.internal/-ringtone-controller/index.html">RingtoneController</a>?) : <a href="../com.m800.sdk.call.internal/-call-session-manager/index.html">CallSessionManager</a>, <a href="../com.m800.sdk.call/-m800-call-session/-m800-control-listener/index.html">M800CallSession.M800ControlListener</a>, <a href="../com.m800.sdk.call/-m800-call-session/-m800-track-listener/index.html">M800CallSession.M800TrackListener</a>, <a href="../com.m800.sdk.call/-m800-merged-call-session/-listener/index.html">M800MergedCallSession.Listener</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="766667368%2FClasslikes%2F940151793" anchor-label="M800CustomVideoEncoderFactory" id="766667368%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-m800-custom-video-encoder-factory/index.html">M800CustomVideoEncoderFactory</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="766667368%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">open class <a href="-m800-custom-video-encoder-factory/index.html">M800CustomVideoEncoderFactory</a> : <span data-unresolved-link="org.webrtc/DefaultVideoEncoderFactory///PointingToDeclaration/">DefaultVideoEncoderFactory</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1436431646%2FClasslikes%2F940151793" anchor-label="NetworkStateMonitorImpl" id="1436431646%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-network-state-monitor-impl/index.html">NetworkStateMonitorImpl</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1436431646%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">class <a href="-network-state-monitor-impl/index.html">NetworkStateMonitorImpl</a>(context: <a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a>, logger: <span data-unresolved-link="com.m800.sdk.core.logger/M800Logger///PointingToDeclaration/">M800Logger</span>, sdkFactory: <a href="../com.m800.sdk.call.internal/-call-sdk-factory/index.html">CallSdkFactory</a>, handler: <a href="https://developer.android.com/reference/kotlin/android/os/Handler.html">Handler</a>) : <a href="../com.m800.sdk.call.internal/-network-state-moniter/index.html">NetworkStateMoniter</a>, <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html">Observer</a>&lt;<span data-unresolved-link="com.m800.sdk.core.util/NetworkQuality.Quality///PointingToDeclaration/">NetworkQuality.Quality</span>&gt; <span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1412654872%2FClasslikes%2F940151793" anchor-label="QualityHelper" id="-1412654872%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-quality-helper/index.html">QualityHelper</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1412654872%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">class <a href="-quality-helper/index.html">QualityHelper</a>(logger: <span data-unresolved-link="com.m800.sdk.core.logger/M800Logger///PointingToDeclaration/">M800Logger</span>, context: <span data-unresolved-link="com.m800.sdk.core/M800Context///PointingToDeclaration/">M800Context</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="2092941487%2FClasslikes%2F940151793" anchor-label="RingtoneControllerImpl" id="2092941487%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-ringtone-controller-impl/index.html">RingtoneControllerImpl</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2092941487%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">class <a href="-ringtone-controller-impl/index.html">RingtoneControllerImpl</a>(context: <a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a>, logger: <span data-unresolved-link="com.m800.sdk.core.logger/M800Logger///PointingToDeclaration/">M800Logger</span>, sdkFactory: <a href="../com.m800.sdk.call.internal/-call-sdk-factory/index.html">CallSdkFactory</a>) : <a href="../com.m800.sdk.call.internal/-ringtone-controller/index.html">RingtoneController</a>, <a href="../com.m800.sdk.call.internal/-internal-ringer-controller/index.html">InternalRingerController</a>, <a href="https://developer.android.com/reference/kotlin/android/media/AudioManager.OnAudioFocusChangeListener.html">AudioManager.OnAudioFocusChangeListener</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1415217838%2FClasslikes%2F940151793" anchor-label="TrackControllerImpl" id="1415217838%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-track-controller-impl/index.html">TrackControllerImpl</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1415217838%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">open class <a href="-track-controller-impl/index.html">TrackControllerImpl</a>(m800Context: <span data-unresolved-link="com.m800.sdk.core/M800Context///PointingToDeclaration/">M800Context</span>, logger: <span data-unresolved-link="com.m800.sdk.core.logger/M800Logger///PointingToDeclaration/">M800Logger</span>, serviceId: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, includeLocalVideo: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, includeRemoteVideo: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, service: <span data-unresolved-link="com.m800.sdk.core.call.service/CallEntryService///PointingToDeclaration/">CallEntryService</span>?, trackMonitorNotify: <a href="-track-monitor-notify/index.html">TrackMonitorNotify</a>?) : <a href="../com.m800.sdk.call.internal/-track-controller/index.html">TrackController</a>, <span data-unresolved-link="org.webrtc/CameraVideoCapturer.CameraSwitchHandler///PointingToDeclaration/">CameraVideoCapturer.CameraSwitchHandler</span>, <a href="-video-track-monitor-notify/index.html">VideoTrackMonitorNotify</a>, <span data-unresolved-link="org.webrtc/RTCStatsCollectorCallback///PointingToDeclaration/">RTCStatsCollectorCallback</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1321010603%2FClasslikes%2F940151793" anchor-label="TrackMonitorNotify" id="-1321010603%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-track-monitor-notify/index.html">TrackMonitorNotify</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1321010603%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">interface <a href="-track-monitor-notify/index.html">TrackMonitorNotify</a> : <a href="-video-track-monitor-notify/index.html">VideoTrackMonitorNotify</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-637228235%2FClasslikes%2F940151793" anchor-label="TransferConferenceTarget" id="-637228235%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-transfer-conference-target/index.html">TransferConferenceTarget</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-637228235%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">data class <a href="-transfer-conference-target/index.html">TransferConferenceTarget</a>(eid: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?, phoneNumber: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-999128414%2FClasslikes%2F940151793" anchor-label="VideoTrackMonitorNotify" id="-999128414%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-video-track-monitor-notify/index.html">VideoTrackMonitorNotify</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-999128414%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">interface <a href="-video-track-monitor-notify/index.html">VideoTrackMonitorNotify</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="507461912%2FClasslikes%2F940151793" anchor-label="VideoTrackMonitorSink" id="507461912%2FClasslikes%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-video-track-monitor-sink/index.html">VideoTrackMonitorSink</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="507461912%2FClasslikes%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">class <a href="-video-track-monitor-sink/index.html">VideoTrackMonitorSink</a>(trackId: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, trackMonitor: <a href="-video-track-monitor-notify/index.html">VideoTrackMonitorNotify</a>?) : <a href="../com.m800.sdk.call/-i-m800-video-sink/index.html">IM800VideoSink</a>, <span data-unresolved-link="org.webrtc/VideoSink///PointingToDeclaration/">VideoSink</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="-2005683355%2FFunctions%2F940151793" anchor-label="addBitRate" id="-2005683355%2FFunctions%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="add-bit-rate.html">addBitRate</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2005683355%2FFunctions%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">fun <a href="add-bit-rate.html">addBitRate</a>(sdp: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="700537188%2FFunctions%2F940151793" anchor-label="adjustOpusCodec" id="700537188%2FFunctions%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="adjust-opus-codec.html">adjustOpusCodec</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="700537188%2FFunctions%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">fun <a href="adjust-opus-codec.html">adjustOpusCodec</a>(sdp: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1435936036%2FFunctions%2F940151793" anchor-label="createMediaConstraints" id="1435936036%2FFunctions%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="create-media-constraints.html">createMediaConstraints</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1435936036%2FFunctions%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">fun <a href="create-media-constraints.html">createMediaConstraints</a>(): <span data-unresolved-link="org.webrtc/MediaConstraints///PointingToDeclaration/">MediaConstraints</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1597395682%2FFunctions%2F940151793" anchor-label="getIceTransportsType" id="-1597395682%2FFunctions%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-ice-transports-type.html">getIceTransportsType</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1597395682%2FFunctions%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">fun <a href="get-ice-transports-type.html">getIceTransportsType</a>(m800IceTransportType: <span data-unresolved-link="com.m800.sdk.core.call.service/M800IceTransportType///PointingToDeclaration/">M800IceTransportType</span>?, m800Context: <span data-unresolved-link="com.m800.sdk.core/M800Context///PointingToDeclaration/">M800Context</span>?): <span data-unresolved-link="org.webrtc/PeerConnection.IceTransportsType///PointingToDeclaration/">PeerConnection.IceTransportsType</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-918899350%2FFunctions%2F940151793" anchor-label="getWebRTCInjectLogger" id="-918899350%2FFunctions%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-web-r-t-c-inject-logger.html">getWebRTCInjectLogger</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-918899350%2FFunctions%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">fun <a href="get-web-r-t-c-inject-logger.html">getWebRTCInjectLogger</a>(logger: <span data-unresolved-link="com.m800.sdk.core.logger/M800Logger///PointingToDeclaration/">M800Logger</span>): <span data-unresolved-link="org.webrtc/Loggable///PointingToDeclaration/">Loggable</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1606497738%2FFunctions%2F940151793" anchor-label="isDeNoiseEnable" id="-1606497738%2FFunctions%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="is-de-noise-enable.html">isDeNoiseEnable</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1606497738%2FFunctions%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">fun <a href="is-de-noise-enable.html">isDeNoiseEnable</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-463992508%2FFunctions%2F940151793" anchor-label="isSdpSendRecv" id="-463992508%2FFunctions%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="is-sdp-send-recv.html">isSdpSendRecv</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-463992508%2FFunctions%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">fun <a href="is-sdp-send-recv.html">isSdpSendRecv</a>(sdp: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1296988472%2FFunctions%2F940151793" anchor-label="isSpdRecvOnly" id="1296988472%2FFunctions%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="is-spd-recv-only.html">isSpdRecvOnly</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1296988472%2FFunctions%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">fun <a href="is-spd-recv-only.html">isSpdRecvOnly</a>(sdp: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1668557269%2FFunctions%2F940151793" anchor-label="nativeEnableNoiseRemoval" id="-1668557269%2FFunctions%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="native-enable-noise-removal.html">nativeEnableNoiseRemoval</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1668557269%2FFunctions%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">external fun <a href="native-enable-noise-removal.html">nativeEnableNoiseRemoval</a>(enable: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="507859193%2FFunctions%2F940151793" anchor-label="setDeNoiseEnable" id="507859193%2FFunctions%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="set-de-noise-enable.html">setDeNoiseEnable</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="507859193%2FFunctions%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><div class="symbol monospace">fun <a href="set-de-noise-enable.html">setDeNoiseEnable</a>(m800Context: <span data-unresolved-link="com.m800.sdk.core/M800Context///PointingToDeclaration/">M800Context</span>, enable: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="-352408558%2FProperties%2F940151793" anchor-label="ICE_CONNECTION_RENEW_PC_DELAY" id="-352408558%2FProperties%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-i-c-e_-c-o-n-n-e-c-t-i-o-n_-r-e-n-e-w_-p-c_-d-e-l-a-y.html">ICE_CONNECTION_RENEW_PC_DELAY</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-352408558%2FProperties%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><a data-name="-352408558%2FProperties%2F940151793" anchor-label="ICE_CONNECTION_RENEW_PC_DELAY" id="-352408558%2FProperties%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a><div class="symbol monospace">const val <a href="-i-c-e_-c-o-n-n-e-c-t-i-o-n_-r-e-n-e-w_-p-c_-d-e-l-a-y.html">ICE_CONNECTION_RENEW_PC_DELAY</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> = 104<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-4104774%2FProperties%2F940151793" anchor-label="KEY_REMOTE_CONFIG_CALL_QOS" id="-4104774%2FProperties%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-k-e-y_-r-e-m-o-t-e_-c-o-n-f-i-g_-c-a-l-l_-q-o-s.html">KEY_REMOTE_CONFIG_CALL_QOS</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-4104774%2FProperties%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><a data-name="-4104774%2FProperties%2F940151793" anchor-label="KEY_REMOTE_CONFIG_CALL_QOS" id="-4104774%2FProperties%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a><div class="symbol monospace">val <a href="-k-e-y_-r-e-m-o-t-e_-c-o-n-f-i-g_-c-a-l-l_-q-o-s.html">KEY_REMOTE_CONFIG_CALL_QOS</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1016041416%2FProperties%2F940151793" anchor-label="OPUS_CODEC_FORMAT" id="1016041416%2FProperties%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-o-p-u-s_-c-o-d-e-c_-f-o-r-m-a-t.html">OPUS_CODEC_FORMAT</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1016041416%2FProperties%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><a data-name="1016041416%2FProperties%2F940151793" anchor-label="OPUS_CODEC_FORMAT" id="1016041416%2FProperties%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a><div class="symbol monospace">const val <a href="-o-p-u-s_-c-o-d-e-c_-f-o-r-m-a-t.html">OPUS_CODEC_FORMAT</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1710524364%2FProperties%2F940151793" anchor-label="OPUS_CODEC_NAME" id="-1710524364%2FProperties%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-o-p-u-s_-c-o-d-e-c_-n-a-m-e.html">OPUS_CODEC_NAME</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1710524364%2FProperties%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><a data-name="-1710524364%2FProperties%2F940151793" anchor-label="OPUS_CODEC_NAME" id="-1710524364%2FProperties%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a><div class="symbol monospace">const val <a href="-o-p-u-s_-c-o-d-e-c_-n-a-m-e.html">OPUS_CODEC_NAME</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="470680159%2FProperties%2F940151793" anchor-label="VIDEO_BITRATE" id="470680159%2FProperties%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-v-i-d-e-o_-b-i-t-r-a-t-e.html">VIDEO_BITRATE</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="470680159%2FProperties%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><a data-name="470680159%2FProperties%2F940151793" anchor-label="VIDEO_BITRATE" id="470680159%2FProperties%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a><div class="symbol monospace">const val <a href="-v-i-d-e-o_-b-i-t-r-a-t-e.html">VIDEO_BITRATE</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="879884621%2FProperties%2F940151793" anchor-label="VIDEO_SDP" id="879884621%2FProperties%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":m800callsdk:dokkaHtml/release" data-filterable-set=":m800callsdk:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-v-i-d-e-o_-s-d-p.html">VIDEO_SDP</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="879884621%2FProperties%2F940151793"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":m800callsdk:dokkaHtml/release"><a data-name="879884621%2FProperties%2F940151793" anchor-label="VIDEO_SDP" id="879884621%2FProperties%2F940151793" data-filterable-set=":m800callsdk:dokkaHtml/release"></a><div class="symbol monospace">const val <a href="-v-i-d-e-o_-s-d-p.html">VIDEO_SDP</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+

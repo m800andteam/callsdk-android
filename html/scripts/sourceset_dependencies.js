@@ -1,0 +1,1 @@
+sourceset_dependencies='{":m800callsdk:dokkaHtml/androidTestRelease":[],":m800callsdk:dokkaHtml/debug":[],":m800callsdk:dokkaHtml/main":[],":m800callsdk:dokkaHtml/release":[],":m800callsdk:dokkaHtml/testFixtures":[],":m800callsdk:dokkaHtml/testFixturesDebug":[],":m800callsdk:dokkaHtml/testFixturesRelease":[]}'
