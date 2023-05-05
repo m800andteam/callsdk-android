@@ -15,8 +15,8 @@ import com.m800.sdk.core.demo.utils.PermissionHelper
 import kotlinx.coroutines.launch
 
 const val SERVICE_ID = "210b.cx-tb.cinnox.com"
-const val USER_ACCOUNT = "liuming@m800.com"
-const val USER_PASSWORD = "Maaii2016"
+const val USER_ACCOUNT = "account"
+const val USER_PASSWORD = "password"
 const val CALLEE_EID = "lJJ12wUj.5vW4mEX6vOlh.b1b2.03000000.s9R0bkTGc4WIb1ZK"
 const val CALLEE_PHONE_NUMBER = "+886800818001" // +864009203827
 const val CLI_NUMBER = "+85234721737"
