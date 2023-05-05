@@ -54,7 +54,6 @@ $dokka.location:com.m800.sdk.call/CinnoxCallInfo/getCallId/#/PointingToDeclarati
 $dokka.location:com.m800.sdk.call/CinnoxCallInfo/getCallType/#/PointingToDeclaration/m800callsdk/com.m800.sdk.call/-cinnox-call-info/get-call-type.html
 $dokka.location:com.m800.sdk.call/CinnoxCallInfo/getDirection/#/PointingToDeclaration/m800callsdk/com.m800.sdk.call/-cinnox-call-info/get-direction.html
 $dokka.location:com.m800.sdk.call/CinnoxCallInfo/getFromEid/#/PointingToDeclaration/m800callsdk/com.m800.sdk.call/-cinnox-call-info/get-from-eid.html
-$dokka.location:com.m800.sdk.call/CinnoxCallInfo/getRemoteDisplayName/#/PointingToDeclaration/m800callsdk/com.m800.sdk.call/-cinnox-call-info/get-remote-display-name.html
 $dokka.location:com.m800.sdk.call/CinnoxCallInfo/getRoomId/#/PointingToDeclaration/m800callsdk/com.m800.sdk.call/-cinnox-call-info/get-room-id.html
 $dokka.location:com.m800.sdk.call/CinnoxCallInfo/getTerminatedReason/#/PointingToDeclaration/m800callsdk/com.m800.sdk.call/-cinnox-call-info/get-terminated-reason.html
 $dokka.location:com.m800.sdk.call/CinnoxCallManager///PointingToDeclaration/m800callsdk/com.m800.sdk.call/-cinnox-call-manager/index.html
